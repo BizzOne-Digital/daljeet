@@ -15,7 +15,7 @@ export function BeforeAfterSlider({ caption }: { caption?: string }) {
   }, []);
 
   return (
-    <div>
+    <div className="w-full max-w-full">
       <div
         ref={containerRef}
         className="relative aspect-[16/10] overflow-hidden rounded-2xl shadow-xl ring-1 ring-brand/15 select-none"

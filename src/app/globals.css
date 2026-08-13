@@ -61,9 +61,14 @@ img:not([data-nimg="fill"]) {
   height: auto;
 }
 
+iframe,
+video {
+  max-width: 100%;
+}
+
 @layer utilities {
   .site-container {
-    @apply mx-auto w-full max-w-7xl px-4 sm:px-5 lg:px-8;
+    @apply mx-auto w-full min-w-0 max-w-7xl px-4 sm:px-5 lg:px-8;
   }
 
   .site-section {

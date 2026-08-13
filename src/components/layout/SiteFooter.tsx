@@ -27,7 +27,7 @@ export function SiteFooter() {
           <Logo size={64} variant="light" />
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/75">{siteConfig.footerDescription}</p>
           <p className="mt-3 text-sm font-semibold text-cyan">{siteConfig.availability}</p>
-          <span className="mt-4 inline-flex rounded-full bg-orange/90 px-3 py-1 text-xs font-bold text-white">
+          <span className="mt-4 inline-flex max-w-full flex-wrap rounded-full bg-orange/90 px-3 py-1 text-xs font-bold text-white">
             {siteConfig.offer.headline} — {siteConfig.offer.termsNote}
           </span>
         </div>

@@ -8,7 +8,8 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
 
   useEffect(() => {
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReduced) return;
+    const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
+    if (prefersReduced || isCoarsePointer) return;
 
     const lenis = new Lenis({
       duration: 1.1,

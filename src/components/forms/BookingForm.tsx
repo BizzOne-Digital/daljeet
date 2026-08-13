@@ -138,12 +138,12 @@ export function BookingForm() {
         </div>
       )}
 
-      <div className="mt-6 flex flex-wrap gap-3">
-        {step > 0 && <button type="button" onClick={() => setStep((s) => s - 1)} className="rounded-full border border-brand/20 px-5 py-2 text-sm font-semibold">Back</button>}
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        {step > 0 && <button type="button" onClick={() => setStep((s) => s - 1)} className="w-full rounded-full border border-brand/20 px-5 py-2.5 text-sm font-semibold sm:w-auto">Back</button>}
         {step < steps.length - 1 ? (
-          <button type="button" onClick={next} className="rounded-full bg-brand px-5 py-2 text-sm font-bold text-white">Next</button>
+          <button type="button" onClick={next} className="w-full rounded-full bg-brand px-5 py-2.5 text-sm font-bold text-white sm:w-auto">Next</button>
         ) : (
-          <button type="submit" disabled={submitting} className="rounded-full bg-brand px-5 py-2 text-sm font-bold text-white disabled:opacity-60">{submitting ? "Submitting..." : "Submit Booking Request"}</button>
+          <button type="submit" disabled={submitting} className="w-full rounded-full bg-brand px-5 py-2.5 text-sm font-bold text-white disabled:opacity-60 sm:w-auto">{submitting ? "Submitting..." : "Submit Booking Request"}</button>
         )}
       </div>
     </form>

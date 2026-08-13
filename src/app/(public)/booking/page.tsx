@@ -21,13 +21,13 @@ export default function BookingPage() {
         imageAlt="Booking hero"
       />
       <section className="site-section py-16 sm:py-20">
-        <div className="site-container grid gap-8 lg:grid-cols-[1.1fr_1fr] lg:gap-10">
-          <div className="grid min-w-0 gap-4">
+        <div className="site-container grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:gap-10">
+          <div className="order-2 hidden min-w-0 gap-4 lg:order-1 lg:grid">
             <Image src={siteImages.sections.steam} alt="Professional steam cleaning" width={600} height={400} className="responsive-img rounded-2xl border border-brand/10 object-cover" />
             <Image src={siteImages.sections.epoxy} alt="Epoxy floor coating" width={600} height={400} className="responsive-img rounded-2xl border border-brand/10 object-cover" />
             <Image src={siteImages.sections.office} alt="Commercial carpet cleaning" width={600} height={400} className="responsive-img rounded-2xl border border-brand/10 object-cover" />
           </div>
-          <div className="min-w-0">
+          <div className="order-1 min-w-0 lg:order-2">
             <BookingForm />
             <p className="mt-6 text-sm text-slate">
               Prefer to call? <a href={`tel:${siteConfig.phoneTel}`} className="font-semibold text-brand">{siteConfig.phone}</a>

@@ -145,7 +145,7 @@ export default function HomePage() {
             <h2 className="mt-2 break-words font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl">{siteConfig.offer.headline}</h2>
             <p className="mt-3 max-w-lg text-white/90">{siteConfig.offer.description}</p>
             <p className="mt-2 text-xs text-white/70">{siteConfig.offer.termsNote}</p>
-            <Link href="/contact" className="mt-8 inline-flex rounded-full bg-white px-8 py-3.5 text-sm font-bold text-brand shadow-lg">Request Free Quote</Link>
+            <Link href="/contact" className="mt-8 inline-flex w-full justify-center rounded-full bg-white px-8 py-3.5 text-sm font-bold text-brand shadow-lg sm:w-auto">Request Free Quote</Link>
           </div>
         </FadeIn>
       </section>

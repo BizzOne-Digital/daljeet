@@ -34,9 +34,9 @@ export function PageHero({
         <h1 className="max-w-4xl break-words font-display text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">{title}</h1>
         {subtitle && <p className="mt-4 max-w-2xl text-sm text-white/80 sm:text-base md:text-lg">{subtitle}</p>}
         {(primaryCta || secondaryCta) && (
-          <div className="mt-8 flex flex-wrap gap-4">
-            {primaryCta && <Link href={primaryCta.href} className="btn-primary inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold text-white">{primaryCta.label}<ArrowRight size={15} /></Link>}
-            {secondaryCta && <Link href={secondaryCta.href} className="rounded-full border border-white/30 px-6 py-3 text-sm font-bold backdrop-blur-sm hover:bg-white/10">{secondaryCta.label}</Link>}
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            {primaryCta && <Link href={primaryCta.href} className="btn-primary inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold text-white sm:w-auto">{primaryCta.label}<ArrowRight size={15} /></Link>}
+            {secondaryCta && <Link href={secondaryCta.href} className="inline-flex w-full justify-center rounded-full border border-white/30 px-6 py-3 text-center text-sm font-bold backdrop-blur-sm hover:bg-white/10 sm:w-auto">{secondaryCta.label}</Link>}
           </div>
         )}
         {showScrollCue && <div className="mt-12 flex items-center gap-2 text-xs uppercase tracking-widest text-white/50"><ArrowDown size={14} className="animate-bounce" />Scroll</div>}

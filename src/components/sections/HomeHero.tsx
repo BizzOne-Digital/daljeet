@@ -73,20 +73,20 @@ export function HomeHero() {
             transition={{ delay: 0.7 }}
             className="mt-4 flex flex-wrap items-center gap-3 text-sm text-cyan"
           >
-            <span className="rounded-full bg-orange px-3 py-1 font-bold text-white">{siteConfig.offer.headline}</span>
-            <span>{siteConfig.availability}</span>
+            <span className="max-w-full rounded-full bg-orange px-3 py-1 text-xs font-bold text-white sm:text-sm">{siteConfig.offer.headline}</span>
+            <span className="break-words">{siteConfig.availability}</span>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.85 }}
-            className="mt-8 flex flex-wrap gap-4"
+            className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
           >
-            <Link href="/booking" className="btn-primary rounded-full px-8 py-3.5 text-sm font-bold text-white">
+            <Link href="/booking" className="btn-primary w-full rounded-full px-8 py-3.5 text-center text-sm font-bold text-white sm:w-auto">
               {siteConfig.ctas.book}
             </Link>
-            <Link href="/services" className="rounded-full border-2 border-white/30 bg-white/10 px-8 py-3.5 text-sm font-bold backdrop-blur-sm transition hover:bg-white/20">
+            <Link href="/services" className="w-full rounded-full border-2 border-white/30 bg-white/10 px-8 py-3.5 text-center text-sm font-bold backdrop-blur-sm transition hover:bg-white/20 sm:w-auto">
               Explore Services
             </Link>
           </motion.div>
