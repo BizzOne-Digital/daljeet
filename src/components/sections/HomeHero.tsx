@@ -38,8 +38,8 @@ export function HomeHero() {
         transition={{ delay: 0.5, duration: 1.2 }}
       />
 
-      <div className="relative mx-auto flex min-h-[88vh] w-full max-w-7xl flex-col justify-center px-4 py-24 sm:min-h-[95vh] sm:py-28 lg:flex-row lg:items-center lg:gap-12 lg:px-8">
-        <div className="min-w-0 flex-1">
+      <div className="relative mx-auto flex min-h-[88vh] w-full max-w-7xl flex-col justify-center px-4 py-24 sm:min-h-[95vh] sm:py-28 lg:px-8">
+        <div className="min-w-0 max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -91,25 +91,6 @@ export function HomeHero() {
             </Link>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.85, rotate: -4 }}
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ delay: 0.4, duration: 0.8, type: "spring", stiffness: 120 }}
-          className="mt-12 flex flex-1 justify-center lg:mt-0"
-        >
-          <div className="animate-float relative overflow-hidden">
-            <div className="absolute inset-0 rounded-full bg-cyan/20 blur-2xl" />
-            <Image
-              src={siteConfig.logo.src}
-              alt={siteConfig.logo.alt}
-              width={340}
-              height={340}
-              className="relative h-auto max-w-[260px] drop-shadow-2xl sm:max-w-[320px] lg:max-w-[340px]"
-              priority
-            />
-          </div>
-        </motion.div>
       </div>
 
       <motion.div
