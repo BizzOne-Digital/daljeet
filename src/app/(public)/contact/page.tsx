@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { PageHero, CTABanner } from "@/components/sections/PageHero";
 import { ContactFormWrapper } from "@/components/forms/ContactFormClient";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
+import { GoogleMap } from "@/components/sections/GoogleMap";
 import { siteImages } from "@/data/images";
 import { siteConfig } from "@/data/site";
 import { faqs } from "@/data/faqs";
@@ -23,7 +24,7 @@ export default function ContactPage() {
             <li><a href={siteConfig.instagram.url} target="_blank" rel="noreferrer" className="text-brand">{siteConfig.instagram.handle}</a></li>
           </ul>
           <Image src={siteImages.sections.steam} alt="Contact support" width={600} height={360} className="responsive-img mt-8 rounded-2xl border border-brand/10" />
-          <div className="mt-6 aspect-video w-full overflow-hidden rounded-2xl border border-brand/10"><iframe title="Map" src={siteConfig.mapEmbedUrl} className="h-full w-full" loading="lazy" /></div>
+          <GoogleMap className="mt-6 aspect-video w-full" />
         </div>
         <div className="min-w-0 rounded-2xl border border-brand/10 bg-white p-6 shadow-sm sm:p-8"><h2 className="font-display text-2xl font-bold">Send a Message</h2><div className="mt-6"><ContactFormWrapper /></div></div>
       </div></section>

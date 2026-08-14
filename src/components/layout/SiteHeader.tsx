@@ -42,7 +42,7 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 lg:px-8">
-        <Logo size={48} />
+        <Logo size={72} />
 
         <nav className="hidden items-center gap-1 lg:flex">
           {headerNav.map((item) => (

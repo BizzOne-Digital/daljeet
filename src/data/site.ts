@@ -45,7 +45,7 @@ export const siteConfig = {
   footerDescription:
     "Locally owned carpet, upholstery, and epoxy flooring services across the GTA. Honest recommendations, thorough results, and quote-based pricing.",
   mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.0!2d-79.78!3d43.73!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s451%20Brisdale%20Drive%2C%20Brampton%2C%20ON!5e0!3m2!1sen!2sca!4v1",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.9!2d-79.78566!3d43.73178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDUxIEJyaXNkYWxlIERyaXZlLCBCcmFtcHRvbiwgT250YXJpbw!5e0!3m2!1sen!2sca!4v1",
   logo: {
     src: "/logo/logo.png",
     alt: "Let's Get Carpet Clean logo",

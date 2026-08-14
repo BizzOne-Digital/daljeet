@@ -6,6 +6,7 @@ import { ServiceCard } from "@/components/sections/Cards";
 import { BeforeAfterSlider } from "@/components/sections/BeforeAfterSlider";
 import { TestimonialSlider } from "@/components/sections/TestimonialSlider";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
+import { GoogleMap } from "@/components/sections/GoogleMap";
 import { FadeIn, StaggerGrid, StaggerItem, ScaleIn } from "@/components/motion/PageTransition";
 import { siteConfig, trustStrip, whyChooseUs, cleaningProcess } from "@/data/site";
 import { siteImages } from "@/data/images";
@@ -197,9 +198,16 @@ export default function HomePage() {
               <span key={city} className="rounded-full bg-brand/10 px-4 py-2 text-sm font-semibold text-brand">{city}</span>
             ))}
           </div>
-          <ScaleIn className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl sm:aspect-[21/9]">
-            <Image src={siteImages.sections.gta} alt="Greater Toronto Area" fill className="object-cover" sizes="100vw" />
-          </ScaleIn>
+          <div className="mt-10 grid gap-8 lg:grid-cols-2">
+            <ScaleIn className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <Image src={siteImages.sections.gta} alt="Greater Toronto Area" fill className="object-cover" sizes="50vw" />
+            </ScaleIn>
+            <FadeIn direction="right">
+              <div className="h-full">
+                <GoogleMap className="h-full min-h-[400px]" />
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 

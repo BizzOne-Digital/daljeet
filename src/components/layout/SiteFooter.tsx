@@ -24,7 +24,7 @@ export function SiteFooter() {
       <div className="steam-glow absolute inset-0 opacity-40" />
       <div className="site-container relative grid gap-10 py-12 sm:py-16 lg:grid-cols-4">
         <div className="lg:col-span-2">
-          <Logo size={64} variant="light" />
+          <Logo size={144} variant="light" />
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/75">{siteConfig.footerDescription}</p>
           <p className="mt-3 text-sm font-semibold text-cyan">{siteConfig.availability}</p>
           <span className="mt-4 inline-flex max-w-full flex-wrap rounded-full bg-orange/90 px-3 py-1 text-xs font-bold text-white">
